@@ -1,16 +1,28 @@
-# votepals
+# VotePals
 
-A new Flutter project.
+This is a final project for our CS Professional Elective 2 Course at Technological University of the Philippnies - Manila
+An application of Borda Count Method in Tourist Destination Picker System 
 
 ## Getting Started
 
-This project is a starting point for a Flutter application.
+### Install Flutter SDK
+- Follow this [documentation](https://docs.flutter.dev/get-started/install) for a detailed guide on how to install flutter on your machine
+- This project was created using Flutter 3.3.9
 
-A few resources to get you started if this is your first Flutter project:
+### Run the app
+- Run the app in any web browser
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+- to run the app in your device:
+```bash
+flutter pub get
+flutter run -d chrome
+```
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+### Build the app
+- to build the app in release mode, run the command below:
+```bash
+flutter build web --release --web-renderer canvaskit  
+```
+
+### Note:
+- Setup your own firebase project for this app and replace the `firebase_options.dart` inside `/lib` directory
